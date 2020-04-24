@@ -65,6 +65,3 @@ class ArticleCategoryList(ArticleList):
         articles = Article.objects.filter(
             category__slug__in=[self.kwargs['slug']]).distinct()
         return articles
-
-
-
